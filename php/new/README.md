@@ -12,7 +12,7 @@
 ```php
 require_once 'QRCode.php';
 
-$qr = new QRCode('https://github.com', 'H', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 
 // Fluent API — configure once, render anywhere
 $qr->size(600)
@@ -192,7 +192,7 @@ $qr->render(string $format = 'png', ?string $filename = null): string|bool
 ### QR with Logo
 
 ```php
-$qr = new QRCode('https://github.com', 'H', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 $qr->size(600)
    ->colors('#000', '#fff')
    ->moduleRadius(0.4)
@@ -203,7 +203,7 @@ $qr->size(600)
 ### Transparent Background
 
 ```php
-$qr = new QRCode('https://example.com', 'M', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'M', 2);
 $qr->size(400)
    ->colors('#000', 'transparent')
    ->render('png', 'transparent.png');
@@ -212,7 +212,7 @@ $qr->size(400)
 ### Finder Styling + Dot Shape
 
 ```php
-$qr = new QRCode('https://example.com', 'H', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 $qr->size(600)
    ->moduleShape('dot')
    ->finderStyle('#e74c3c', '#3498db', 0.5, 0.5)
@@ -222,7 +222,7 @@ $qr->size(600)
 ### Label with Strip
 
 ```php
-$qr = new QRCode('https://example.com', 'Q', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'Q', 2);
 $qr->size(500)
    ->moduleRadius(0.3)
    ->label('SCAN ME', 0.08, '#333', null, 'Arial, sans-serif', true)

@@ -12,7 +12,7 @@
 ```php
 require_once 'QRCode.php';
 
-$qr = new QRCode('https://github.com', 'H', 0, 1, 40);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 0, 1, 40);
 
 // Fluent API — configure once, render anywhere
 $qr->setSize(600)

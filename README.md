@@ -46,7 +46,7 @@ qrcode/
 ```html
 <script src="QRCode.js"></script>
 <script>
-  const qr = new QRCode('https://github.com', 'H', 2);
+  const qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
   qr.size(400)
     .colors('#000000', '#ffffff')
     .moduleRadius(0.4);
@@ -67,7 +67,7 @@ qrcode/
 ```php
 require_once 'QRCode.php';
 
-$qr = new QRCode('https://github.com', 'H', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 $qr->size(600)
    ->colors('#000000', '#ffffff')
    ->moduleRadius(0.4)
@@ -82,7 +82,7 @@ $qr->render('webp', 'qrcode.webp'); // Same config → WEBP
 ```php
 require_once 'QRCode.php';
 
-$qr = new QRCode('https://github.com', ErrorCorrection::High, quietZone: 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', ErrorCorrection::High, quietZone: 2);
 $qr->size(600)
    ->colors('#000000', '#ffffff')
    ->moduleShape(ModuleShape::Dot)
@@ -95,7 +95,7 @@ $qr->size(600)
 ```php
 require_once 'QRCode.php';
 
-$qr = new QRCode('https://github.com', 'H', 0, 1, 40);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 0, 1, 40);
 $qr->setSize(600)
    ->setColors('#000000', '#ffffff')
    ->setModuleRadius(0.4)
@@ -299,13 +299,13 @@ await qr.download(filename, format); // Download file via Blob
 
 ```javascript
 // JavaScript
-const qr = new QRCode('https://example.com', 'M', 2);
+const qr = new QRCode('https://cyberzilla.github.io/qrcode', 'M', 2);
 document.body.appendChild(qr.size(400).render('canvas'));
 ```
 
 ```php
 // PHP
-$qr = new QRCode('https://example.com', 'M', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'M', 2);
 $qr->size(400)->render('png', 'simple.png');
 ```
 
@@ -313,7 +313,7 @@ $qr->size(400)->render('png', 'simple.png');
 
 ```javascript
 // JavaScript (async required for logo)
-const qr = new QRCode('https://github.com', 'H', 2);
+const qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 qr.size(600)
   .colors('#000', '#fff')
   .moduleRadius(0.4)
@@ -325,7 +325,7 @@ document.body.appendChild(canvas);
 
 ```php
 // PHP
-$qr = new QRCode('https://github.com', 'H', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 $qr->size(600)
    ->colors('#000', '#fff')
    ->moduleRadius(0.4)
@@ -337,14 +337,14 @@ $qr->size(600)
 
 ```javascript
 // JavaScript
-const qr = new QRCode('https://example.com', 'M', 2);
+const qr = new QRCode('https://cyberzilla.github.io/qrcode', 'M', 2);
 qr.size(400).colors('#000', 'transparent');
 const canvas = await qr.renderAsync('canvas');
 ```
 
 ```php
 // PHP
-$qr = new QRCode('https://example.com', 'M', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'M', 2);
 $qr->size(400)
    ->colors('#000', 'transparent')
    ->render('png', 'transparent.png');
@@ -353,7 +353,7 @@ $qr->size(400)
 ### Finder Pattern Styling
 
 ```javascript
-const qr = new QRCode('https://example.com', 'H', 2);
+const qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 qr.size(600)
   .moduleRadius(0.4)
   .finderStyle('#e74c3c', '#3498db', 0.5, 0.5)
@@ -363,7 +363,7 @@ qr.size(600)
 ### Label with Strip
 
 ```javascript
-const qr = new QRCode('https://example.com', 'Q', 2);
+const qr = new QRCode('https://cyberzilla.github.io/qrcode', 'Q', 2);
 qr.size(500)
   .moduleRadius(0.3)
   .label('SCAN ME', 0.08, '#333', 'Arial, sans-serif', true);
@@ -374,7 +374,7 @@ document.body.appendChild(qr.render('canvas'));
 ### Dot / Diamond Shape
 
 ```javascript
-const qr = new QRCode('https://example.com', 'H', 2);
+const qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 qr.size(500)
   .moduleShape('dot')
   .finderStyle('#e74c3c', '#3498db', 0.5, 0.5);
@@ -385,7 +385,7 @@ document.body.appendChild(qr.render('canvas'));
 ### Download (JS only)
 
 ```javascript
-const qr = new QRCode('https://example.com', 'H', 2);
+const qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 qr.size(600).colors('#1a1a2e', '#fff');
 
 await qr.download('qrcode.png', 'png');
@@ -396,7 +396,7 @@ await qr.download('qrcode.webp', 'webp');
 ### Multi-format from Single Config (PHP)
 
 ```php
-$qr = new QRCode('https://example.com', 'H', 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', 'H', 2);
 $qr->size(500)
    ->colors('#1a1a2e', '#ffffff')
    ->moduleRadius(0.35)

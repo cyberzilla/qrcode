@@ -12,7 +12,7 @@
 ```php
 require_once 'QRCode.php';
 
-$qr = new QRCode('https://github.com', ErrorCorrection::High, quietZone: 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', ErrorCorrection::High, quietZone: 2);
 
 $qr->size(600)
    ->colors('#000000', '#ffffff')
@@ -196,7 +196,7 @@ $qr->render(
 ### QR with Logo (Named Arguments)
 
 ```php
-$qr = new QRCode('https://github.com', ErrorCorrection::High, quietZone: 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', ErrorCorrection::High, quietZone: 2);
 $qr->size(600)
    ->colors('#000', '#fff')
    ->moduleRadius(0.4)
@@ -207,7 +207,7 @@ $qr->size(600)
 ### Transparent Background
 
 ```php
-$qr = new QRCode('https://example.com', ErrorCorrection::Medium);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', ErrorCorrection::Medium);
 $qr->size(400)
    ->colors('#000', 'transparent')
    ->render(OutputFormat::PNG, filename: 'transparent.png');
@@ -216,7 +216,7 @@ $qr->size(400)
 ### Dot Shape + Custom Finders
 
 ```php
-$qr = new QRCode('https://example.com', ErrorCorrection::High);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', ErrorCorrection::High);
 $qr->size(600)
    ->moduleShape(ModuleShape::Dot)
    ->finderStyle(outerColor: '#e74c3c', innerColor: '#3498db', outerRadius: 0.5, innerRadius: 0.5)
@@ -226,7 +226,7 @@ $qr->size(600)
 ### Multi-format Output
 
 ```php
-$qr = new QRCode('https://example.com', ErrorCorrection::High, quietZone: 2);
+$qr = new QRCode('https://cyberzilla.github.io/qrcode', ErrorCorrection::High, quietZone: 2);
 $qr->size(500)
    ->colors('#1a1a2e', '#fff')
    ->moduleRadius(0.35);
